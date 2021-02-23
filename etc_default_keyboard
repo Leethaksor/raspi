@@ -1,0 +1,8 @@
+
+XKBMODEL="logiultrax"
+XKBLAYOUT="fi"
+XKBVARIANT="nodeadkeys"
+XKBOPTIONS="compose:ralt,caps:escape"
+
+BACKSPACE="guess"
+

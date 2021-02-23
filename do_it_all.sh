@@ -1,0 +1,1 @@
+./install_updates.sh
