@@ -6,9 +6,9 @@
 
 sudo cp -f ./etc_default_keyboard /etc/default/keyboard
 
-dpkg-reconfigure -f noninteractive keyboard-configuration
+sudo dpkg-reconfigure -f noninteractive keyboard-configuration
 
-invoke-rc.d keyboard-setup start
-setsid sh -c 'exec setupcon -k --force <> /dev/tty1 >&0 2>&1'
-udevadm trigger --subsystem-match=input --action=change
+sudo invoke-rc.d keyboard-setup start
+sudo setsid sh -c 'exec setupcon -k --force <> /dev/tty1 >&0 2>&1'
+sudo udevadm trigger --subsystem-match=input --action=change
 
