@@ -1,0 +1,13 @@
+[Unit]
+Description=UV4L Raspicam Text
+After=uv4l_raspicam.service
+
+[Service]
+Type=simple
+ExecStart=/usr/share/uv4l/raspicam/uv4l-time-overlay /dev/video1 /usr/share/uv4l/raspicam/textnew.json
+Restart=on-abnormal
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
+
